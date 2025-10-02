@@ -5,7 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11,<3.13"
 dependencies = [
-    "torch==2.4.1+cu121",
+    "torch==2.8.0+cu129",
     "torchvision>=0.19.1",
     "torchaudio>=2.4.1",
     "lightning>=2.5.1",
@@ -46,7 +46,7 @@ dependencies = [
 
 [tool.uv]
 find-links = [
-    "https://data.pyg.org/whl/torch-2.4.0%2Bcu121.html"
+    "https://data.pyg.org/whl/torch-2.8.0%2Bcu129.html"
 ]
 no-build-package = ["torch", "torchvision", "torchaudio", "torch-geometric", "torch-scatter", "torch-cluster"]
 
@@ -55,7 +55,7 @@ torch = { index = "pytorch" }
 
 [[tool.uv.index]]
 name = "pytorch"
-url = "https://download.pytorch.org/whl/cu121"
+url = "https://download.pytorch.org/whl/cu129"
 explicit = true
 
 [build-system]
